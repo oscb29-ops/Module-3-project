@@ -911,6 +911,20 @@ MOBILE RESPONSIVENESS
         max-width: 768px;
     }
 
+    .values__list {
+        max-width: 20rem;
+        flex-direction: column;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        margin-right: 0px;
+    }
+
     .section__title {
         font-size: 36px;
     }
@@ -928,17 +942,20 @@ MOBILE RESPONSIVENESS
 
 @media (max-width: 768px) {
     #quality .row {
-    #values .row 
         flex-direction: column-reverse;
     }
 
     .row {
         flex-direction: column;
     }
-    #steps .row,
+    #steps .row {
+        flex-direction: column;
+        align-content: center;
+    }
+
     #testimonials .row {
         flex-direction: column;
-        align-items: center;
+        align-content: center;
     }
     #pricing .row {
         margin-top: 40px;
@@ -952,6 +969,30 @@ MOBILE RESPONSIVENESS
         justify-content: center;
     }
 
+    .values__img {
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .values__description {
+        margin-top: 64px;
+        padding: 0px; 
+        text-align: center;
+    }
+
+    .values__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value {
+        align-items: center;
+        margin-right: 0px; 
+    }
+
+   #values .row {
+        flex-direction: column-reverse;
+   }
     .footer__columns {
       flex-direction: column;
       text-align: center;
@@ -1002,6 +1043,15 @@ MOBILE RESPONSIVENESS
 
     .quality {
         justify-content: center;
+    }
+
+    #pricing .row {
+        font-size: 36px;
+    }
+
+     .plan__bottom {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -1252,7 +1302,7 @@ footer {
 }
 
 .footer__columns {
-    margin-top: 48px;
+    margin-top: -48px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1264,7 +1314,19 @@ footer {
     flex-direction: column;
     align-items: center;
     z-index: 2;
-    width: calc(100%/5);
+    
+}
+
+.footer__column--link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #f7fafc;
+    transition: 300ms;
+    opacity: 0;
 }
 
 .footer__divider {
