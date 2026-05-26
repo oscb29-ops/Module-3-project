@@ -183,7 +183,7 @@ nav {
 .row {
     width: 100%;
     max-width: 1280px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .row__narrow {
@@ -849,8 +849,7 @@ MOBILE RESPONSIVENESS
 
 
 @media (max-width: 1024px) {
-    
-    .btn__menu {
+     .btn__menu {
         display: block;
     }
 
@@ -971,9 +970,6 @@ MOBILE RESPONSIVENESS
         text-align: center;
     }
 
-    .row {
-        flex-direction: column;
-    }
     #steps .row {
         flex-direction: column;
     }
