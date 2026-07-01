@@ -957,9 +957,21 @@ MOBILE RESPONSIVENESS
         flex-wrap: wrap;
         gap: 32px;
     }
+
+    .start__title {
+        text-align: center;
+        width: 100%;
+        max-width: 512px;
+    }
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 80px 24px;
+    }
+    
+    
+    
     #quality .row {
         flex-direction: column-reverse;
     }
@@ -994,6 +1006,11 @@ MOBILE RESPONSIVENESS
 
     .features {
         justify-content: center;
+    }
+
+    .feature__row {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .quality {
@@ -1087,6 +1104,28 @@ MOBILE RESPONSIVENESS
      .plan__bottom {
         padding-left: 0;
         padding-right: 0;
+    }
+
+
+    .start__button:nth-child(1) {
+        margin-right: 0px;
+    }
+
+    .btn {
+        line-height: 1.5;
+    }
+
+    .start__button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .start__container {
+        padding: 80px 0;
+    }
+
+    .start__title {
+        font-size: 24px;
     }
 }
 
