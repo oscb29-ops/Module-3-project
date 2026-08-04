@@ -336,6 +336,12 @@ flex-direction: row;
 width: 60%;
 }
 
+.header__img {
+    width: 100%;
+    max-width: 768px;
+}
+
+
 .header__customers {
 margin-top: 16px;
 padding-right: 128px;
